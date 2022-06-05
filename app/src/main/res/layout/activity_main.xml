@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F39393"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="153dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rotation="180"
+                android:rotationY="0"
+                android:text="Крестики"
+                android:textSize="50sp" />
+
+            <TableLayout
+                android:layout_width="390dp"
+                android:layout_height="315dp"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:insetRight="1dp"
+                        android:onClick="k1"
+                        android:textSize="44sp" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:insetLeft="1dp"
+                        android:onClick="k2"
+                        android:textSize="44sp" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:insetLeft="1dp"
+                        android:onClick="k3"
+                        android:textSize="44sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:insetRight="1dp"
+                        android:onClick="k4"
+                        android:textSize="44sp" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:insetRight="1dp"
+                        android:onClick="k5"
+                        android:textSize="44sp" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:insetLeft="1dp"
+                        android:onClick="k6"
+                        android:textSize="44sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:insetRight="1dp"
+                        android:onClick="k7"
+                        android:textSize="44sp" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:onClick="k8"
+                        android:textSize="44sp" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:insetLeft="1dp"
+                        android:onClick="k9"
+                        android:textSize="44sp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нолики"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="res"
+                android:text="Reset"
+                android:textSize="0sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
