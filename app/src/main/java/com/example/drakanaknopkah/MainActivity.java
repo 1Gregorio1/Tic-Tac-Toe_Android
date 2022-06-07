@@ -80,7 +80,10 @@ public class MainActivity extends AppCompatActivity {
     public void res(View v){
         reset();
     }
-
+    public void reset_bet(){
+        button10.setEnabled(false);
+        button10.getBackground().setAlpha(0);
+    }
 
     //// Ходы человека
     public void k1(View v){
@@ -95,8 +98,7 @@ public class MainActivity extends AppCompatActivity {
         button.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void k2(View v){
@@ -111,8 +113,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void k3(View v){
@@ -127,8 +128,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void k4(View v){
@@ -142,8 +142,7 @@ public class MainActivity extends AppCompatActivity {
         button4.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void k5(View v){
@@ -158,8 +157,7 @@ public class MainActivity extends AppCompatActivity {
         button5.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void k6(View v){
@@ -174,8 +172,7 @@ public class MainActivity extends AppCompatActivity {
         button6.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void k7(View v){
@@ -190,8 +187,7 @@ public class MainActivity extends AppCompatActivity {
         button7.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void k8(View v){
@@ -205,8 +201,7 @@ public class MainActivity extends AppCompatActivity {
         button8.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void k9(View v){
@@ -221,8 +216,7 @@ public class MainActivity extends AppCompatActivity {
         button9.setEnabled(false);
         str = Integer.toString(x);
         textView3.setText(str);
-        button10.setEnabled(false);
-        button10.getBackground().setAlpha(0);
+        reset_bet();
         proverka();
     }
     public void block(){
@@ -241,11 +235,20 @@ public class MainActivity extends AppCompatActivity {
         button10.getBackground().setAlpha(120);
 
     }
+
+    public void krest_win(){
+        textView.setText("Крестик победил");
+        textView2.setText("Крестик победил");
+    }
+    public void nolik_win(){
+        textView.setText("Нолик победил");
+        textView2.setText("Нолик победил");
+    }
+
     public void proverka(){
         if(x != 0){
             textView.setText("");
             textView2.setText("");
-
         }
         if(x == 9){
             textView.setText("Ничья");
@@ -256,89 +259,69 @@ public class MainActivity extends AppCompatActivity {
             button10.setBackgroundColor(0xFF6200EE);
         }
         if((button.getText().equals("X"))&&(button2.getText().equals("X"))&&(button3.getText().equals("X"))){
-            textView.setText("Крестик победил");
-            textView2.setText("Крестик победил");// 1 2 3
+            krest_win();// 1 2 3
             block();
         }
         if((button.getText().equals("X"))&&(button4.getText().equals("X"))&&(button7.getText().equals("X"))){
-            textView.setText("Крестик победил");
-            textView2.setText("Крестик победил");// 1 4 7
+            krest_win();// 1 4 7
             block();
         }
         if((button.getText().equals("X"))&&(button5.getText().equals("X"))&&(button9.getText().equals("X"))){
-            textView.setText("Крестик победил");
-            textView2.setText("Крестик победил");// 1 5 9
+            krest_win();// 1 5 9
             block();
         }
         if((button2.getText().equals("X"))&&(button5.getText().equals("X"))&&(button8.getText().equals("X"))){
-            textView.setText("Крестик победил");
-            textView2.setText("Крестик победил");// 2 5 8
+            krest_win();// 2 5 8
             block();
         }
         if((button3.getText().equals("X"))&&(button6.getText().equals("X"))&&(button9.getText().equals("X"))){
-            textView.setText("Крестик победил");
-            textView2.setText("Крестик победил");// 3 6 9
+            krest_win();// 3 6 9
             block();
         }
         if((button4.getText().equals("X"))&&(button5.getText().equals("X"))&&(button6.getText().equals("X"))){
-            textView.setText("Крестик победил");
-            textView2.setText("Крестик победил");// 4 5 6
+            krest_win();// 4 5 6
             block();
         }
         if((button7.getText().equals("X"))&&(button8.getText().equals("X"))&&(button9.getText().equals("X"))){
-            textView.setText("Крестик победил");
-            textView2.setText("Крестик победил");// 7 8 9
+            krest_win();// 7 8 9
             block();
         }
         if((button3.getText().equals("X"))&&(button5.getText().equals("X"))&&(button7.getText().equals("X"))){
-            textView.setText("Крестик победил");
-            textView2.setText("Крестик победил");// 3 5 7
+            krest_win();// 3 5 7
             block();
         }
 
-
-
         if((button.getText().equals("O"))&&(button2.getText().equals("O"))&&(button3.getText().equals("O"))){
-            textView.setText("Нолик победил");
-            textView2.setText("Нолик победил");// 1 2 3
+            // 1 2 3
             block();
         }
         if((button.getText().equals("O"))&&(button4.getText().equals("O"))&&(button7.getText().equals("O"))){
-            textView.setText("Нолик победил");
-            textView2.setText("Нолик победил");// 1 4 7
+            nolik_win();// 1 4 7
             block();
         }
         if((button.getText().equals("O"))&&(button5.getText().equals("O"))&&(button9.getText().equals("O"))){
-            textView.setText("Нолик победил");
-            textView2.setText("Нолик победил");// 1 5 9
+            nolik_win();// 1 5 9
             block();
         }
         if((button2.getText().equals("O"))&&(button5.getText().equals("O"))&&(button8.getText().equals("O"))){
-            textView.setText("Нолик победил");
-            textView2.setText("Нолик победил");// 2 5 8
+            nolik_win();// 2 5 8
             block();
         }
         if((button3.getText().equals("O"))&&(button6.getText().equals("O"))&&(button9.getText().equals("O"))){
-            textView.setText("Нолик победил");
-            textView2.setText("Нолик победил"); // 3 6 9
+            nolik_win(); // 3 6 9
             block();
         }
         if((button4.getText().equals("O"))&&(button5.getText().equals("O"))&&(button6.getText().equals("O"))){
-            textView.setText("Нолик победил");
-            textView2.setText("Нолик победил"); // 4 5 6
+            nolik_win(); // 4 5 6
             block();
         }
         if((button7.getText().equals("O"))&&(button8.getText().equals("O"))&&(button9.getText().equals("O"))){
-            textView.setText("Нолик победил");
-            textView2.setText("Нолик победил"); // 7 8 9
+            nolik_win(); // 7 8 9
             block();
         }
         if((button3.getText().equals("O"))&&(button5.getText().equals("O"))&&(button7.getText().equals("O"))){
-            textView.setText("Нолик победил");
-            textView2.setText("Нолик победил"); // 3 5 7
+            nolik_win(); // 3 5 7
             block();
         }
-
-
     }
 }
