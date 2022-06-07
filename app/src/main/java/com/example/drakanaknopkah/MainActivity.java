@@ -77,14 +77,14 @@ public class MainActivity extends AppCompatActivity {
         button10.getBackground().setAlpha(0);
     }
 
-    public void res(View v){
-        reset();
-    }
     public void reset_bet(){
         button10.setEnabled(false);
         button10.getBackground().setAlpha(0);
     }
-
+    ///// Новый файт
+    public void res(View v){
+        reset();
+    }
     //// Ходы человека
     public void k1(View v){
         count();

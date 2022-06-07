@@ -51,6 +51,7 @@
                         android:layout_width="130dp"
                         android:layout_height="100dp"
                         android:insetLeft="1dp"
+                        android:insetRight="1dp"
                         android:onClick="k2"
                         android:textSize="44sp" />
 
@@ -79,6 +80,7 @@
                         android:id="@+id/button5"
                         android:layout_width="130dp"
                         android:layout_height="100dp"
+                        android:insetLeft="1dp"
                         android:insetRight="1dp"
                         android:onClick="k5"
                         android:textSize="44sp" />
@@ -109,6 +111,8 @@
                         android:id="@+id/button8"
                         android:layout_width="130dp"
                         android:layout_height="100dp"
+                        android:insetLeft="1dp"
+                        android:insetRight="1dp"
                         android:onClick="k8"
                         android:textSize="44sp" />
 
