@@ -220,6 +220,7 @@ public class MainActivity extends AppCompatActivity {
         reset_bet();
         proverka();
     }
+
     public void block(){
         button.setEnabled(false);
         button2.setEnabled(false);
@@ -234,8 +235,8 @@ public class MainActivity extends AppCompatActivity {
         button10.setTextSize(TypedValue.COMPLEX_UNIT_PX, 40);
         button10.setBackgroundColor(0xFF6200EE);
         button10.getBackground().setAlpha(120);
-
     }
+
     ////// Победы
     public void krest_win(){
         textView.setText("Крестик победил");
