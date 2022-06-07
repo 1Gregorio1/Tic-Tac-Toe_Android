@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         reset();
     }
     //// Ходы человека
+
     public void k1(View v){
         count();
         if(x % 2 == 1){
@@ -235,11 +236,12 @@ public class MainActivity extends AppCompatActivity {
         button10.getBackground().setAlpha(120);
 
     }
-
+    ////// Победы
     public void krest_win(){
         textView.setText("Крестик победил");
         textView2.setText("Крестик победил");
     }
+
     public void nolik_win(){
         textView.setText("Нолик победил");
         textView2.setText("Нолик победил");
