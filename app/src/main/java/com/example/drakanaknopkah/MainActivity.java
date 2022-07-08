@@ -2,7 +2,6 @@ package com.example.drakanaknopkah;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
@@ -86,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
         reset();
     }
     //// Ходы человека
+    public void sockr(Button button){
+        button.setEnabled(false);
+        str = Integer.toString(x);
+        textView3.setText(str);
+        reset_bet();
+        proverka();
+    }
 
     public void k1(View v){
         count();
@@ -96,11 +102,7 @@ public class MainActivity extends AppCompatActivity {
             krest[0][0] = znak1;
             button.setText(znak1);
         }
-        button.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button);
     }
     public void k2(View v){
         count();
@@ -111,11 +113,7 @@ public class MainActivity extends AppCompatActivity {
             krest[0][1] = znak1;
             button2.setText(znak1);
         }
-        button2.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button2);
     }
     public void k3(View v){
         count();
@@ -126,11 +124,7 @@ public class MainActivity extends AppCompatActivity {
             krest[0][2] = znak1;
             button3.setText(znak1);
         }
-        button3.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button3);
     }
     public void k4(View v){
         count();
@@ -140,11 +134,7 @@ public class MainActivity extends AppCompatActivity {
         else{krest[1][0] = znak1;
             button4.setText(znak1);
         }
-        button4.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button4);
     }
     public void k5(View v){
         count();
@@ -155,11 +145,7 @@ public class MainActivity extends AppCompatActivity {
             krest[1][1] = znak1;
             button5.setText(znak1);
         }
-        button5.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button5);
     }
     public void k6(View v){
         count();
@@ -170,11 +156,7 @@ public class MainActivity extends AppCompatActivity {
             krest[1][2] = znak1;
             button6.setText(znak1);
         }
-        button6.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button6);
     }
     public void k7(View v){
         count();
@@ -185,11 +167,7 @@ public class MainActivity extends AppCompatActivity {
             krest[2][0] = znak1;
             button7.setText(znak1);
         }
-        button7.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button7);
     }
     public void k8(View v){
         count();
@@ -199,11 +177,7 @@ public class MainActivity extends AppCompatActivity {
         else{krest[2][1] = znak1;
             button8.setText(znak1);
         }
-        button8.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button8);
     }
     public void k9(View v){
         count();
@@ -214,11 +188,7 @@ public class MainActivity extends AppCompatActivity {
             krest[2][2] = znak1;
             button9.setText(znak1);
         }
-        button9.setEnabled(false);
-        str = Integer.toString(x);
-        textView3.setText(str);
-        reset_bet();
-        proverka();
+        sockr(button9);
     }
 
     public void block(){
